@@ -93,6 +93,90 @@ class Item(models.Model):
         on_delete=models.SET_NULL,
     )
 
+
+
+
+
+    #CMR用フォーム入力項目
+    # cmr_no
+    cmr_no = models.TextField(
+        verbose_name='Color Matching Request Number',
+        blank=True,
+        null=True,
+    )
+
+    # customer_name
+    customer_name = models.TextField(
+        verbose_name='Customer company name',
+        blank=True,
+        null=True,
+    )
+
+    # Requester person name
+    requester_name = models.TextField(
+        verbose_name='Requester person name',
+        blank=True,
+        null=True,
+    )
+
+    # resin_type
+    cmr_no = models.TextField(
+        verbose_name='Resin type',
+        blank=True,
+        null=True,
+    )
+
+    # resin_brand
+    cmr_no = models.TextField(
+        verbose_name='Resin brand',
+        blank=True,
+        null=True,
+    )
+
+    # resin_grade
+    cmr_no = models.TextField(
+        verbose_name='Resin grade',
+        blank=True,
+        null=True,
+    )
+
+    color_shade = models.TextField(
+        verbose_name='color_shade',
+        blank=True,
+        null=True,
+    )
+
+    """
+    color_reference_plate = models.BooleanField(
+        verbose_name='color_reference_plate',
+    )
+
+    color_reference_pellet = models.BooleanField(
+        verbose_name='color_reference_pellet',
+    )
+
+    color_reference_parts = models.BooleanField(
+        verbose_name='color_reference_parts',
+    )
+
+    color_reference_recipe = models.BooleanField(
+        verbose_name='color_reference_recipe',
+    )
+
+    color_reference_pantone = models.BooleanField(
+        verbose_name='color_reference_pantone',
+    )
+
+    color_reference_other = models.TextField(
+        verbose_name='color_reference_other',
+        blank=True,
+        null=True,
+    )
+    """
+
+
+
+
     # 以下、管理項目
 
     # 作成者(ユーザー)
